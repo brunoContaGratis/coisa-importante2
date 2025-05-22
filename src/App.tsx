@@ -426,20 +426,31 @@ function App() {
               <div className="w-40 mt-3">
                 <img src={stitch} />
               </div>
-              <Typography
-                sx={{
-                  fontFamily: "Poppins, sans-serif",
-                  fontSize: "2rem",
-                  fontWeight: "bold",
-                  color: "#ec4899", // Tailwind pink-500
-                  textAlign: "center",
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center", // centraliza horizontalmente
+                  justifyContent: "center", // centraliza verticalmente, se necessário
+                  textAlign: "center", // centraliza texto dentro dos spans
+                  paddingLeft: 0, // remove o padding-left que atrapalha
                 }}
               >
-                Que show gatinha, passo te buscar ❤️ <br />
-                Você ganhou uma janta grátis com a minha bela companhia!
-                <br />
-                Vamos comer bastante.
-              </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "1.5rem",
+                    fontWeight: "bold",
+                    color: "#ec4899", // Tailwind pink-500
+                    textAlign: "center",
+                  }}
+                >
+                  Que show gatinha, passo te buscar ❤️ <br />
+                  Você ganhou uma janta grátis com a minha bela companhia!
+                  <br />
+                  Vamos comer bastante.
+                </Typography>
+              </div>
             </div>
           )}
         </FormControl>
