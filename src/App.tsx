@@ -6,7 +6,6 @@ import gilsons from "./assets/gilson.png";
 import stitch from "./assets/stitch.png";
 
 function App() {
-  const [resposta, setResposta] = useState("");
   const [renderCry, setRenderCry] = useState(false);
   const [divMain, setDivMain] = useState(true);
   const [divMain2, setDivMain2] = useState(false);
