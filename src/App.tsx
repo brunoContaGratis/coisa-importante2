@@ -64,7 +64,7 @@ function App() {
           sx={{
             fontFamily: "Poppins, sans-serif",
             fontWeight: "bold",
-            fontSize: "2rem",
+            fontSize: "1.5rem",
           }}
         >
           Olá Karla,<span className="text-pink-400"> bem vinda </span>ao site!
@@ -75,17 +75,33 @@ function App() {
       </div>
       <div className="mt-16">
         <FormControl>
-          <span
-            style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.5rem" }}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center", // centraliza horizontalmente
+              justifyContent: "center", // centraliza verticalmente, se necessário
+              textAlign: "center", // centraliza texto dentro dos spans
+              paddingLeft: 0, // remove o padding-left que atrapalha
+            }}
           >
-            Você teria alguns minutos para responder, uma pesquisa importante?
-          </span>
-          <span
-            style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.5rem" }}
-            className="self-center mt-5"
-          >
-            Com uma <b>surpresa especial</b> no final!
-          </span>
+            <span
+              style={{
+                fontFamily: "Poppins, sans-serif",
+                fontSize: "1.1rem",
+                paddingLeft: 0, // tira paddingLeft aqui
+              }}
+            >
+              Você teria alguns minutos <br />
+              para responder, uma pesquisa importante?
+            </span>
+            <span
+              style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.2rem" }}
+              className="self-center mt-5"
+            >
+              Com uma <b>surpresa especial</b> no final!
+            </span>
+          </div>
           {divMain && (
             <div className="flex justify-center mt-20 gap-8">
               <Button
@@ -153,7 +169,7 @@ function App() {
               <Typography
                 sx={{
                   fontFamily: "Poppins, sans-serif",
-                  fontSize: "1.5rem",
+                  fontSize: "1.1rem",
                   fontWeight: "bold",
                 }}
               >
@@ -162,10 +178,21 @@ function App() {
                 </div>
 
                 <br />
-                <div className="flex justify-center">
-                  Outra pergunta. Como se diz
-                  <span className="text-pink-400 px-4">"Momento" </span> em
-                  espanhol?
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center", // centraliza horizontalmente
+                    justifyContent: "center", // centraliza verticalmente, se necessário
+                    textAlign: "center", // centraliza texto dentro dos spans
+                    paddingLeft: 0, // remove o padding-left que atrapalha
+                  }}
+                >
+                  <span>
+                    Outra pergunta. Como se diz
+                    <span className="text-pink-400 px-4">"Momento" </span> em
+                    espanhol?
+                  </span>
                 </div>
               </Typography>
               <TextField
@@ -199,16 +226,20 @@ function App() {
           )}
           {divMain4 && (
             <div className="flex flex-col items-center mt-20 gap-6">
-              <Typography
-                sx={{
-                  fontFamily: "Poppins, sans-serif",
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center", // centraliza horizontalmente
+                  justifyContent: "center", // centraliza verticalmente, se necessário
+                  textAlign: "center", // centraliza texto dentro dos spans
+                  paddingLeft: 0, // remove o padding-left que atrapalha
                   fontSize: "1.5rem",
-                  fontWeight: "bold",
                 }}
               >
                 Parabéns seu espanhol está ótimo! <br />
                 Quem é a pessoa mais bonita do mundo?
-              </Typography>
+              </div>
               <div className="flex justify-center gap-8 mt-5">
                 <Button
                   variant="contained"
